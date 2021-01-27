@@ -246,7 +246,7 @@ function checkGame(){
 	if(mov == 9){
 		document.getElementById('winner').innerHTML = '¡ Empate !';
 		document.getElementById('info').innerHTML = 'Fin de partida';
-		btnRestart.style.display = '';
+		btnRestart.style.visibility = 'visible';
 		return;
 	}
 	/* Analisis del turno */
