@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>TATETI canvas</title>
+	<link rel="stylesheet" href="css/estilosTateti.css">
+	<link rel="shortcut icon" type="image/png" href="img/tablero.png"/>
+</head>
+<body>
+	<div id="tateti">
+		<br>
+		<h2 id="info">info</h2>
+		<br>
+		<div id="table">
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="100px" width="100px"></canvas>
+			<canvas height="300px" width="300px" id="finalDraw"></canvas>
+		</div>
+		<br>
+		<form name="formMode">
+			<label for="mode">Modo de Juego: </label>
+			<select name="mode" id="mode">
+				<option value="0" selected>I.A. Normal</option>
+				<option value="1">I.A. Imposible</option>
+			 	<option value="2">Humano vs Humano</option>
+			</select>
+		</form>
+		<h2 id="winner"></h2>
+		<input type="button" value="Restart" id="restart">
+		<footer>
+			<p>Creado y diseñado por <strong>Leandro Lobo</strong>, enero de 2021.</p>
+		</footer>
+	</div>
+	</body>
+<script src="js/tatetiCanvas.js"></script>
+</html>

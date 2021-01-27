@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+}
+html,body{
+	height:100%;
+}
+/****************************************************/
+/* Tablero TATETI */
+/****************************************************/
+#tateti{
+	font-family: 'Rubik', sans-serif;
+	min-height: 100%;
+	min-width: 100%;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: thistle;
+}
+#tateti #info{
+	font-size: 25px;
+	height: 35px;
+	width: 300px;
+	text-align: center;
+}
+#tateti #winner{
+	font-size: 30px;
+	height: 40px;
+	width: 300px;
+	text-align: center;
+	margin-top: 10px;
+}
+#tateti #table{
+	width: 300px;
+	height: 300px;
+	display: flex;
+	flex-flow: row wrap;
+	background-image: url(../img/tablero.png);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+#tateti #finalDraw{
+	position: absolute;
+	z-index: 1;
+}
+#tateti #restart{
+	font-family: 'Rubik', sans-serif;
+	width: 100px;
+	height: 40px;
+	font-size: 20px;
+	background: black;
+	color: lightyellow;
+	margin-top: 10px;
+}
+#tateti select{
+	font-family: 'Rubik', sans-serif;
+	font-size: 16px;
+	background: lightyellow;
+	color: indigo;
+}
+footer{
+	margin-top: 10px;
+	text-align: center;
+	color: indigo;
+	font-size: 18px;
+	background: lightyellow;
+	padding: 5px;
+	width: 100%;
+}
+/****************************************************/
+
+
+
+/****************************************************/
+/* Media Querys */
+/****************************************************/
+
+/****************************************************/
+
