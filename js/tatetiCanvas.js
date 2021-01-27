@@ -273,7 +273,7 @@ function initTable(){
 	btnRestart.style.visibility = 'hidden';
 	document.getElementById('winner').innerHTML = '';
 	mode = document.formMode.mode.value;
-	console.log(mode);
+	console.log('mode= '+mode);
 	mov = f1 = f2 = f3 = c1 = c2 = c3 = d1 = d2 = 0;
 	game++;
 	turno = game%2;
@@ -412,9 +412,12 @@ function IA(){
         if(tablePosition[1].className == 'X' && tablePosition[3].className == 'X'){return 1}
         if(d1==11 && f2==1){return 4}
         if(d2==11 && f2==1){return 2}
-        if(d1==6 && c2==6){return 7}
-        if(d2==6 && c2==6){return 9}
-        if(d2==6 && f2==6){return 9}
+        if(d1==6 && c2==6 && c3==5){return 3}
+        if(d1==6 && c2==6 && c1==5){return 7}
+        if(d2==6 && f2==6 && f3==5){return 9}
+        if(d2==6 && f2==6 && f1==5){return 1}
+        if(d2==6 && c2==6 && c1==5){return 1}
+        if(d2==6 && c2==6 && c3==5){return 9}
         if(f2==6 && c2==6){return 9}
     }
     /////////// Asegurando la partida; 5 prioridad, luego esquinas luego laterales /////////////
